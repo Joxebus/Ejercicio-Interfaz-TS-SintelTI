@@ -227,7 +227,7 @@ html ul.tabs li.active, html ul.tabs li.active a, html ul.tabs li.active a:hover
 }
 .tab_content{
 	padding:20px;
-	font-size:12px;
+	font-size:10pt;
 }
 
 /* Contenidos */
@@ -250,4 +250,25 @@ a:hover.icono{
 div.icono img, div.icono p{
 	padding:8px 15px 0 0;
 	margin:0;
+}
+
+#modulos{
+	margin-top:30px;       /*definiendo margen superior*/
+}
+.modulo{
+	width:200px;      /*definiendo ancho y alto de los modulos*/
+	height:200px;
+	float:left;
+	margin-right:20px;
+	padding: 30px 5px 5px 5px;
+	color:#f1f1f1;
+}
+#twitter{
+	background:url('../images/twitter.png') no-repeat top right #464646;
+}
+#calendario{
+	background:url('../images/calendario.png') no-repeat top right #464646;
+}
+#noticias{
+	background:url('../images/noticias.png') no-repeat top right #464646;
 }
