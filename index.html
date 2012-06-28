@@ -2,6 +2,9 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+<link rel="stylesheet" href="css/menu.css" type="text/css" />
+<link rel="stylesheet" href="css/contenido.css" type="text/css" />
+<link rel="stylesheet" href="css/modulos.css" type="text/css" />
 <title>Interfaz TS-SintelTI</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <script src="js/jquery.min.js" type="text/javascript"></script>
@@ -124,12 +127,54 @@
 					</div>
 				</div>
 			</div>
-			
-			
+
+
 			<div id="modulos">
-				<div id="twitter" class="modulo"></div>
-				<div id="calendario" class="modulo"></div>
-				<div id="noticias" class="modulo"></div>
+				<div id="twitter" class="modulo">
+
+					<script charset="utf-8"
+						src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script>
+						new TWTR.Widget({
+							version : 2,
+							type : 'profile',
+							rpp : 2,
+							interval : 30000,
+							width : 200,
+							height : 160,
+							theme : {
+								shell : {
+									background : '#333333',
+									color : '#ffffff'
+								},
+								tweets : {
+									background : '#464646	',
+									color : '#ffffff',
+									links : '#00b8c7'
+								}
+							},
+							features : {
+								scrollbar : false,
+								loop : false,
+								live : true,
+								behavior : 'all'
+							}
+						}).render().setUser('Joxebus').start();
+					</script>
+
+				</div>
+				
+				<div id="calendario" class="modulo">
+					<div class="google_calendar">
+						<iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=190&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=joxebus%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FMexico_City" style=" border-width:0 " width="190" height="190" frameborder="0" scrolling="no"></iframe>
+					</div>
+				</div>
+				
+				<div id="noticias" class="modulo">
+						<div class="feed">
+						<script id="feed-134090450234795" type="text/javascript" src="http://rss.bloople.net/?url=http%3A%2F%2Fwww.ministryofsound.com%2Frss.aspx&detail=-1&limit=5&showtitle=false&type=js&id=134090450234795"></script>
+						</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+#modulos{
+	margin-top:30px;       /*definiendo margen superior*/
+}
+.modulo{
+	width:200px;      /*definiendo ancho y alto de los modulos*/
+	height:250px;
+	float:left;
+	margin-right:20px;
+	padding: 30px 5px 5px 5px;
+	color:#f1f1f1;
+	border-radius:5px;
+	-moz-border-radius:5px; /* Firefox 3.6 and earlier */
+}
+
+
+
+#twitter{
+	background:url('../images/twitter.png') no-repeat top 5px right 5px #333333;	
+	
+}
+#calendario{
+	background:url('../images/calendario.png') no-repeat top 5px right 5px #333333;
+}
+#noticias{
+	background:url('../images/noticias.png') no-repeat top 5px right 5px #333333;	
+}
+
+.google_calendar {
+	padding-top: 10px;
+	float: left;	
+}
+
+.feed {
+	padding: 5px;
+	float: left;	
+}
+
+h4.feed-item-title{
+	padding-top:3px;
+	padding-bottom:5px
+}
+
+h4.feed-item-title a{
+	padding: 10px 5px 0px 0px;
+	text-decoration:none;
+	color:#fff;
+	font-weight:normal;
+}
+
+h4.feed-item-title a:hover{
+	color:#f26522;
+	font-weight:bolder;
+}

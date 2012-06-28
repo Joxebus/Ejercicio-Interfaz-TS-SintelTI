@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+
+.menu{
+	margin:50px 0 0 0;  /*le agregamos un margen superior  al menu conforme al
+				diseño previo*/
+}
+.menu h4 + div{   /*el signo de '+' es un selector adyacente, indicamos que
+		aplicará el estilo al elemento despues del signo, siempre y cuando
+		tenga el mismo elemento padre del elemento anterior al signo, 
+		y se encuentre justo despues de este*/
+	height:0;  /*no tiene altura, por lo tanto se encuentra oculto*/
+	overflow: hidden;  /*especifica que el contenido se encuentra oculto*/
+	transition: height 0.3s ease-in;  /*controla el cambio gradual entre
+		un estilo y otro*/
+	-webkit-transition: height 0.3s ease-in;  /*Safari y Chrome*/
+	-moz-transition:  height 0.3s ease-in;  /*Mozilla Firefox*/
+	-o-transition: height 0.3s ease-in;  /*Opera*/
+	-ms-transition: height 0.3s ease-in;  /*IE10*/
+}
+.menu :target h4 + div{   /* :target permite seleccionar elementos que han
+		sido usados como target dentro de la pagina, definidos por un id,
+		haciendo clic sobre un ancla que apunte a dicho id para dirigirnos
+		a este*/
+	height:100px;  /*aumentamos la altura para hacer visible el contenido*/
+}
+
+.menu .seccion.larga:target h4 + div{
+	height:160px;
+}
+
+.menu{
+	margin:50px 0 0 0;
+	background-color:#3d3d3d;  /* definimos color de fondo para el menú */
+}
+.menu a{
+	color:#fff; /*color de los links*/
+	text-decoration:none;  /*quitamos el estilo subrayado por default*/
+}
+.menu a:hover{  /*color de los links al estar el cursos encima*/
+	color:#e5e5e5;
+}
+h4{  /*estilo para los titulos*/
+	margin:0;
+	border-top:1px solid #d1d1d1;
+	border-bottom:1px solid #d1d1d1;
+}
+
+.s_admin{
+	background:url(../images/admin.png) no-repeat 5px #00a2b7;
+			/*agregamos la imagen de fondo, que no se repita,
+			y definimos el azul para el fondo*/
+	text-align:right;
+	padding: 20px 10px 20px 0;
+	font-size:14px;
+}
+.s_perfil{
+	background:url(../images/perfil.png) no-repeat 5px #00a2b7;
+	text-align:right;
+	padding: 20px 10px 20px 0;
+	font-size:14px;
+}
+.s_popularidad{
+	background:url(../images/popularidad.png) no-repeat 5px #00a2b7;
+	text-align:right;
+	padding: 20px 10px 20px 0;
+	font-size:14px;
+}
+
+.menu ul{
+	margin:0;   /*Quitamos margenes a los manús*/
+	padding:0;
+}
+.menu li{
+	list-style:none;  /*quitamos el estilo a las listas*/
+	padding:8px 10px 8px 25px;
+}
+.menu li:hover{
+	background-color:#4e4e4e;
+			/*definimos color del link cuando el cursos este encima*/
+}
