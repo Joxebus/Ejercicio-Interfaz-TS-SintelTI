@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="css/estilo.css" type="text/css" />
+<title>Interfaz TS-SintelTI</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/tabs.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="contenedor">
+		<div id="cabecera">
+			<div id="logo">
+				<img src="images/logoTS.png" />
+			</div>
+			<div id="herramientas">
+				<div id="bienvenido">
+					<p>
+						Bienvenido <span class="nombre_usuario">Tony Stark </span> <img
+							src="images/smiley.png"> !
+				</div>
+				<div id="status">
+					<span class="mensajes">(1238)</span> | <span class="configuracion">Configuración</span>
+					| <span class="logout">Cerrar sesión</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="navegacion">
+			<div class="menu">
+				<div id="admin" class="seccion">
+					<h4 class="s_admin">
+						<a href="#admin">Administración</a>
+					</h4>
+					<div>
+						<ul>
+							<li><a href="#">Administración de Armadura</a></li>
+							<li><a href="#">Administración de Armadura</a></li>
+							<li><a href="#">Administración de Armadura</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="perfil" class="seccion">
+					<h4 class="s_perfil">
+						<a href="#perfil">Perfil</a>
+					</h4>
+					<div>
+						<ul>
+							<li><a href="#">Perfil izquierdo</a></li>
+							<li><a href="#">Perfil derecho</a></li>
+							<li><a href="#">Perfil griego</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="popularidad" class="seccion larga">
+					<h4 class="s_popularidad">
+						<a href="#popularidad">Popularidad</a>
+					</h4>
+					<div>
+						<ul>
+							<li><a href="#">Mis fans</a></li>
+							<li><a href="#">Mis groupies</a></li>
+							<li><a href="#">Mis male-fans</a></li>
+							<li><a href="#">Likes en FB</a></li>
+							<li><a href="#">RT y FAV´s en TW</a></li>
+							<li><a href="#">Followers</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contenido">
+			<div id="pestañas">
+
+				<ul class="tabs">
+					<li><a href="#tab1">Panel de administración</a></li>
+					<li><a href="#tab2">Noticias</a></li>
+					<li><a href="#tab3">Perfil</a></li>
+				</ul>
+
+				<div class="tab_container">
+					<div id="tab1" class="tab_content">
+						<a href="#" class="icono">
+							<div class="icono">
+								<img src="images/admin.png" alt="administracion"/>
+								<p>Panel de<br/> Administración</p>
+							</div>
+						</a>
+						<a href="#" class="icono"></a>
+						<a href="#" class="icono"></a>
+					</div>
+					<div id="tab2" class="tab_content">
+						<img src="images/f-a.jpg" alt="forever_alone" />
+					</div>
+					<div id="tab3" class="tab_content">
+						<img src="images/t-f.jpg" alt="troll_face" />
+					</div>
+				</div>
+			</div>
+			<div id="modulos">*Aquí irán los modulos</div>
+		</div>
+	</div>
+</body>
+</html>
